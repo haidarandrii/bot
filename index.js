@@ -1,6 +1,9 @@
+const express = require('express');
+const app = express();
 const TelegramBotApi = require('node-telegram-bot-api');
 
 process.env["NTBA_FIX_350"] = 1;
+app.listen(process.env.PORT || 8080);
 
 const TOKEN = '5797842637:AAHj1TRS3YFZo_eqiX5eM1DatS-EoCJEj5g';
 
